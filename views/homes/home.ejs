@@ -1,0 +1,96 @@
+<% layout("layouts/plate") %>
+
+<!-- HERO SECTION -->
+<div class="container mt-5">
+  <div class="text-center">
+    <h1 class="fw-bold display-5">Airbnb Neo 🏠</h1>
+    <p class="lead mt-3 text-muted">
+      A rental property listing platform where users can explore properties,
+      sign up, add listings, and share reviews.
+    </p>
+
+    <div class="mt-4">
+      <a href="/listings" class="btn btn-primary btn-lg me-2">
+        View Properties
+      </a>
+
+      <% if (!currUser) { %>
+        <a href="/signup" class="btn btn-outline-secondary btn-lg">
+          Get Started
+        </a>
+      <% } %>
+    </div>
+  </div>
+</div>
+
+<hr class="my-5">
+
+<!-- FEATURES SECTION -->
+<div class="container">
+  <div class="row text-center">
+
+    <div class="col-md-4 mb-4">
+      <h4>🏠 Property Listings</h4>
+      <p class="text-muted">
+        Browse rental properties and view detailed information
+        shared by property owners.
+      </p>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <h4>🔐 Authentication</h4>
+      <p class="text-muted">
+        Secure sign up and login system. Only logged-in users can
+        create listings or post reviews.
+      </p>
+    </div>
+
+    <div class="col-md-4 mb-4">
+      <h4>⭐ Reviews</h4>
+      <p class="text-muted">
+        Users can share their experience by adding reviews
+        to listed properties.
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<hr class="my-5">
+
+<!-- HOW IT WORKS -->
+<div class="container">
+  <div class="row text-center">
+
+    <div class="col-md-3 mb-3">
+      <h5>1️⃣ Sign Up</h5>
+      <p class="text-muted">Create your account to get started.</p>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <h5>2️⃣ Explore</h5>
+      <p class="text-muted">Browse available rental properties.</p>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <h5>3️⃣ Add Listing</h5>
+      <p class="text-muted">Post your own property listings.</p>
+    </div>
+
+    <div class="col-md-3 mb-3">
+      <h5>4️⃣ Review</h5>
+      <p class="text-muted">Leave reviews on listed properties.</p>
+    </div>
+
+  </div>
+</div>
+
+<hr class="my-5">
+
+<!-- TECH STACK -->
+<div class="container text-center mb-5">
+  <p class="text-muted">
+    Built using <strong>Node.js</strong>, <strong>Express</strong>,
+    <strong>MongoDB</strong>, <strong>Passport.js</strong> and <strong>EJS</strong>.
+  </p>
+</div>

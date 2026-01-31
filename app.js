@@ -69,9 +69,7 @@ async function main(params) {
 
 
 // create first route to check setup
-// app.get("/",(req,res)=>{
-//     res.send("Hii it is basic or root page");
-// })
+
 
 const store=MongoStore.create({
     mongoUrl:DbUrl,
@@ -134,7 +132,11 @@ app.use((req,res,next)=>{
 // })
 
 
-
+app.get("/",(req,res)=>{
+    // res.send("Hii it is basic or root page");
+    // res.redirect("/listings");
+    res.render("homes/home");
+})
 // listings related routes
 app.use("/listings",listingRouter);
 
